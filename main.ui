@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main</class>
+ <widget class="QMainWindow" name="Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>536</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Розумні замітки</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(100, 167, 58)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>521</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QTextEdit" name="text_area_edit">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(232, 232, 232); border: 3px solid black;border-radius:5px</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_zametki">
+         <property name="styleSheet">
+          <string notr="true"> border: 3px solid black;border-radius:5px;background-color:rgb(232, 232, 232)</string>
+         </property>
+         <property name="text">
+          <string>Список заміток</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="list_zamitok">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(232, 232, 232); border: 3px solid black;border-radius:5px</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="btn_create_zam">
+           <property name="styleSheet">
+            <string notr="true">border: 3px solid black;border-radius:5px;background-color:rgb(72, 189, 0);</string>
+           </property>
+           <property name="text">
+            <string>Створити замітку</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_delete_zam">
+           <property name="styleSheet">
+            <string notr="true"> border: 3px solid black;border-radius:5px;background-color:rgb(255, 0, 4); </string>
+           </property>
+           <property name="text">
+            <string>Видалити замітку</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_save_zam">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(72, 189, 0); border: 3px solid black;border-radius:5px;</string>
+         </property>
+         <property name="text">
+          <string>Зберегти замітку</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_tegs">
+         <property name="styleSheet">
+          <string notr="true"> border: 3px solid black;border-radius:5px;background-color:rgb(232, 232, 232)</string>
+         </property>
+         <property name="text">
+          <string>Список тегів</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="list_tegs">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(232, 232, 232); border: 3px solid black;border-radius:5px</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="search_line">
+         <property name="styleSheet">
+          <string notr="true"> border: 3px solid black;border-radius:5px;
+background-color:rgb(232, 232, 232)</string>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Введіть тег</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="btn_add">
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(72, 189, 0); border: 3px solid black;border-radius:5px;</string>
+           </property>
+           <property name="text">
+            <string>Додати до замтіки</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_dontadd">
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(255, 0, 4); border: 3px solid black;border-radius:5px;</string>
+           </property>
+           <property name="text">
+            <string>Відкрипити від замітки</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="search_btn">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(72, 189, 0); border: 3px solid black;border-radius:5px;</string>
+         </property>
+         <property name="text">
+          <string>Шукати</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>536</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
